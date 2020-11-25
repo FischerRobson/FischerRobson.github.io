@@ -8,4 +8,6 @@ routes.post('/comments', CommentsController.create)
 
 routes.get('/comments', CommentsController.index)
 
+routes.get('/comments/:id', CommentsController.detail)
+
 module.exports = routes

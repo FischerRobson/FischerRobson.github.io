@@ -1,0 +1,31 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.page-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #282a36;
+    height: 5vh;
+}
+
+.page-header h4 {
+    /*padding-top: 1vh;*/
+    font-family: 'Press Start 2P', cursive;
+}
+
+.page-header a {
+    text-decoration: none;
+    color: #f8f8f2;
+    transition: color 0.5s;
+    display: block;
+    text-align: center;
+    width: 25vw;
+    line-height: 5vh;
+}
+
+.page-header a:hover {
+    color: #ff5555	;
+}

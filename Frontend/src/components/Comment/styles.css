@@ -1,0 +1,49 @@
+.content-comment{
+    margin-top: 5vh;
+	width: 450px;
+	font-size: 16px;
+	background: #495C70;
+	padding: 30px 30px 15px 30px;
+	border: 5px solid #53687E;
+	font-family: 'Poppins', sans-serif;
+}
+
+.comment-header {
+	display: flex;
+	flex-direction: row;
+}
+
+.content-comment .comment-name {
+	font-size: 2.5vh;
+	justify-content: left;
+	align-items: initial;
+
+}
+
+.content-comment .comment-date {
+	color: #8be9fd;
+	justify-content: right;
+	font-size: 1.6vh;
+	padding-top: 5px;
+}
+
+.content-comment .comment-email {
+	margin-left: 0px;
+}
+
+.content-comment .comment-phone {
+	display: flex;
+	justify-content: center;
+}
+
+
+.content-comment .comment-phone p{
+	color: #bd93f9;
+	margin-right: 0px;
+}
+
+.content-comment .comment-comment {
+
+}
+
+

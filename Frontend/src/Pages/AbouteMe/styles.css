@@ -1,0 +1,77 @@
+body {
+    overflow-x: hidden;
+}
+
+.content-aboutme {
+    background-color: #44475a;
+    height: 100vw;
+    width: 100vw;
+    color: #f8f8f2;
+    font-family: 'Poppins', sans-serif;
+}
+
+.page-header {
+    width: 100vw;
+}
+
+.content-aboutme .center {
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.content-aboutme h2{
+    text-align: center;
+    padding-top: 5vh;
+    font-size: 3rem;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.content-aboutme p {
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    font-size: 1.2rem;
+    width: 60vw;
+    margin: auto;
+}
+
+.content-aboutme h4 {
+    text-align: center;
+    margin-top: 3vh;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    /*font-family: 'Amatic SC', cursive;*/
+}
+
+.content-aboutme ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.content-aboutme li {
+    align-items: start;
+    font-size: 1.1rem;
+    line-height: 1.25;
+}
+
+.content-aboutme figure {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content-aboutme .images-sports {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.content-aboutme .images-sports img {
+    max-width: 13vw;
+    max-height: 13vw;
+}

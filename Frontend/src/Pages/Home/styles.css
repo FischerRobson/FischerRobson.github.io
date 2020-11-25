@@ -1,0 +1,25 @@
+.content-home {
+    height: 95vh;
+    width: 100vw;
+    background: url('../../images/background.jpg') no-repeat;
+    background-size: 100%;
+}
+
+.me-intro {
+    text-align: center;
+    padding-top: 15vh;
+    max-width: 50vh;
+}
+
+.me-intro h2, h3, span {
+    color: #f8f8f2;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.me-intro img {
+    border-radius: 50%;
+    max-width: 25vw;
+    max-height: 25vh;
+}
+
