@@ -17,12 +17,35 @@ const Projects = () => {
 
     const [comments, setComments] = useState([])
 
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [phone, setPhone] = useState('')
+    const [comment, setComment] = useState('')
+
+
     useEffect(()=>{
         api.get('comments').then(res => {
             setComments(res.data)
         })
     })
     //sem [] pois será sempre atualizado
+
+    function insertComment (event) {
+        event.preventDefault()
+
+        const now = new Date()
+        const date = now.getDate() + '/' + (now.getMonth() + 1) + '/' + now.getFullYear()
+
+        api.post('comments', {
+            name,
+            email,
+            date,
+            phone,
+            comment
+        }).then( () => {
+            alert('deu certo seu comentario amigo')
+        } )
+    }
     
     return(
         <div className="content-projects">
@@ -60,19 +83,19 @@ const Projects = () => {
 
             <div className="content-form">
                 
-            <form class="form-style-4" action="" method="post">
+            <form class="form-style-4" onSubmit={insertComment}>
             <h3>Leave a comment here</h3>
                 <label for="name">
-                    <span>Enter Your Name</span><input type="text" name="name" required="true" />
+                    <span>Enter Your Name</span><input type="text" name="name" required="true" onChange={(e) => setName(e.target.value)} autocomplete="off"/>
                 </label>
                 <label for="email">
-                    <span>Email Address</span><input type="email" name="email" required="true" />
+                    <span>Email Address</span><input type="email" name="email" required="true" onChange={(e) => setEmail(e.target.value)} autocomplete="off"/>
                 </label>
                 <label for="phone">
-                    <span>Phone Number</span><input type="text" name="phone" required="true" />
+                    <span>Phone Number</span><input type="text" name="phone" required="true" onChange={(e) => setPhone(e.target.value)} autocomplete="off"/>
                 </label>
                 <label for="comment">
-                    <span>Message to Us</span><textarea id="comment" name="comment" required="true"></textarea>
+                    <span>Message to Us</span><textarea name="comment" required="true" onChange={(e) => setComment(e.target.value)} ></textarea>
                 </label>
                 <label>
                     <span> </span><input type="submit" value="Send Letter" />
